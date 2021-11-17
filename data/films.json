@@ -1,0 +1,22 @@
+[
+  {
+    "title":"Jaws",
+    "year":1975,
+    "duration":124
+  },
+  {
+	 "title":"Winter's Bone",
+	 "year":2010,
+	 "duration":100
+  },
+  {
+	 "title":"Do The Right Thing",
+	 "year":1989,
+	 "duration":120
+ },
+ {
+   "title":"The Incredibles",
+   "year":2004,
+   "duration":115
+ }
+]
