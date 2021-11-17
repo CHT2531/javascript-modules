@@ -68,7 +68,7 @@ to
 setFilms(data); //assign the loaded data to the films variables
 ```
 
-We've moved the films variable into the *filmModel.js*, so we won't be able to assign data to it. Instead we call the ```setFilms()``` function in *filmModel.js* to store the list of films.
+We've moved the ```films``` variable into the *filmModel.js*, so we won't be able to assign data to it. Instead we call the ```setFilms()``` function in *filmModel.js* to store the list of films.
 
 Finally, in the HTML page, we need to specify that we are using modules. Change the ```<script>``` element to:
 
