@@ -78,7 +78,7 @@ Finally, in the HTML page, we need to specify that we are using modules. Change 
 
 Test the app still works. Have a good look through the code to fully understand what you have just done.
 
-## On Your Own
+## On your own
 * Can you create two more modules. One called *validationFncs.js*, this should contain the *validSearchTerm()* function, and another module called *loadData.js*. This should contain the *loadData()* function. You just need to copy the functions from *app.js*.
-* You will need to export the functions from the module and import them into app.js.
+* You will need to export the functions from the modules and import them into app.js.
 * You will also need to comment out the functions in *app.js* once you move over to using the modules.
