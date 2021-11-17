@@ -2,21 +2,25 @@
   {
     "title":"Jaws",
     "year":1975,
-    "duration":124
+    "duration":124,
+    "certificate":"15"
   },
   {
 	 "title":"Winter's Bone",
 	 "year":2010,
-	 "duration":100
+	 "duration":100,
+   "certificate":"15"
   },
   {
 	 "title":"Do The Right Thing",
 	 "year":1989,
-	 "duration":120
+	 "duration":120,
+   "certificate":"15"
  },
  {
    "title":"The Incredibles",
    "year":2004,
-   "duration":115
+   "duration":115,
+   "certificate":"U"
  }
 ]
