@@ -28,7 +28,7 @@ function loadData(url,callback)
 function doSearch()
 {
   clearSearchResults();
-  const searchTerm = searchBox.value;
+  const searchTerm = searchBox.value.toLowerCase();
   if(validSearchTerm(searchTerm)){
     const matchingFilms = searchFilms(searchTerm);
     displayResults(matchingFilms);
