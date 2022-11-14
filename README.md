@@ -5,7 +5,7 @@
 
 This is very similar to an example we looked at previously when we did a recap on the DOM. I have made some attempt to structure and organise the code using functions. Have a good look at the code, try and follow the order of execution i.e. what code is called and when, and see how each function does a single, focussed task.
 
-> Although this makes good use of function to organise the code. This example is far from perfect e.g.  it is heavily reliant on global variables.  
+> Although this makes good use of functions to organise the code. This example is far from perfect e.g.  it is heavily reliant on global variables.  
 
 There are quite a few functions in this file, it would be nice if we could split the functions into separate modules, and *encapsulate* parts of the application.
 
