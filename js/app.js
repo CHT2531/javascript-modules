@@ -5,6 +5,15 @@ let searchBox; //<input id="search-box" placeholder="Enter a film title">
 
 window.addEventListener("load",loadData("./data/films.json",init));
 
+function loadData(url,callback)
+{
+	fetch(url).then(function(response) {
+		return response.json();
+	}).then(function(data) {
+		callback(data);
+	});
+}
+
 function init(data){
   films = data; //assign the loaded data to the films variables
   //get hold of HTML elements
@@ -14,15 +23,6 @@ function init(data){
   // add event listeners for the button and the search box
   goBtn.addEventListener("click",doSearch);
   searchBox.addEventListener("keyup",doSearch);
-}
-
-function loadData(url,callback)
-{
-	fetch(url).then(function(response) {
-		return response.json();
-	}).then(function(data) {
-		callback(data);
-	});
 }
 
 function doSearch()
