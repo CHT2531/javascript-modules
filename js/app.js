@@ -5,7 +5,7 @@ let searchBox; //<input id="search-box" placeholder="Enter a film title">
 
 window.addEventListener("load",loadData("./data/films.json",init));
 
-function loadData(url,callback)
+function loadData(url, callback)
 {
 	fetch(url).then(function(response) {
 		return response.json();
@@ -54,17 +54,13 @@ function searchFilms(searchTerm){
 }
 
 function clearSearchResults(){
-  while(filmsList.firstChild){
-	    filmsList.removeChild(filmsList.firstChild);
-	}
+  filmsList.innerHTML="";
 }
 
 function displayResults(matchingFilms){
-  const filmsFragment = document.createDocumentFragment();
   matchingFilms.forEach(function(film){
       const newLi = document.createElement("li");
       newLi.textContent = `${film.title} (${film.certificate})`;
-      filmsFragment.appendChild(newLi);
+      filmsList.appendChild(newLi);
   });
-  filmsList.appendChild(filmsFragment);
 }
